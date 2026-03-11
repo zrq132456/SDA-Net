@@ -1,0 +1,8 @@
+__pycache__/
+vis/
+work_dir/
+*.pyc
+*.pth
+*.pt
+*.ckpt
+*.log

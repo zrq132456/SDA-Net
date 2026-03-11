@@ -1,0 +1,33 @@
+# ===== experiment info =====
+note: state_xception_only
+work_dir: work_dir
+
+# ===== dataset =====
+dataset_root: ../datasets
+num_classes: 3
+label_map:
+  healthy: 0
+  stressed: 1
+  diseased: 2
+
+# ===== model switches =====
+use_T: false
+use_R: false
+use_dirichlet: false
+use_T_eval: false
+use_R_eval: false
+backbone: xception
+
+# ===== training =====
+epochs: 50
+lr: 1e-6
+lambda_conf: 0.5
+lambda_risk: 0.5
+print_every: 0.4
+
+# ===== early stopping =====
+es_monitor: macro_f1
+es_mode: max
+es_patience: 5
+es_min_delta: 1e-3
+es_min_epoch: 15

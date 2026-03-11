@@ -1,0 +1,37 @@
+# ===== experiment info =====
+note: disease_mobilenetv2_ablation_ir
+work_dir: work_dir
+
+# ===== dataset =====
+dataset_root: ../BDShrimp
+num_classes: 4
+label_map:
+  healthy: 0
+  wssv: 1
+  bg: 2
+  wssv_bg: 3
+
+# ===== cv ==========
+seeds: [42, 43, 44, 45, 49]
+
+# ===== model switches =====
+use_T: false
+use_R: true
+use_dirichlet: true
+use_T_eval: false
+use_R_eval: true
+backbone: mobilenet_v2
+
+# ===== training =====
+epochs: 50
+lr: 1e-6
+lambda_conf: 0.6
+lambda_risk: 0.3
+print_every: 0.4
+
+# ===== early stopping =====
+es_monitor: macro_f1
+es_mode: max
+es_patience: 5
+es_min_delta: 1e-3
+es_min_epoch: 10

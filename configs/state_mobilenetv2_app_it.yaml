@@ -1,0 +1,33 @@
+# ===== experiment info =====
+note: state_mobilenetv2_app_it
+work_dir: work_dir
+
+# ===== dataset =====
+dataset_root: ../datasets
+num_classes: 3
+label_map:
+  healthy: 0
+  stressed: 1
+  diseased: 2
+
+# ===== model switches =====
+use_T: true
+use_R: true
+use_dirichlet: true
+use_T_eval: true
+use_R_eval: false
+backbone: mobilenet_v2
+
+# ===== training =====
+epochs: 50
+lr: 1e-6
+lambda_conf: 0.6
+lambda_risk: 0.3
+print_every: 0.4
+
+# ===== early stopping =====
+es_monitor: macro_f1
+es_mode: max
+es_patience: 5
+es_min_delta: 1e-3
+es_min_epoch: 15

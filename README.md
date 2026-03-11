@@ -82,7 +82,7 @@ SDA-Net
 ├── requirements.txt
 └── README.md
 ```
-Note: `vis/` and `work_dir/` are generated during training and are not required for running the code.
+Note: `work_dir/` is generated during training and are not required for running the code.
 
 ## Acknowledgement
 

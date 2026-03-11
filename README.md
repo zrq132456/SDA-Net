@@ -104,5 +104,3 @@ If you find this repository useful in your research, please cite:
 ## License
 
 This repository is released for research purposes only.
-
-```

@@ -1,0 +1,40 @@
+# ===== experiment info =====
+note: fish_vgg16_baseline
+work_dir: work_dir
+
+# ===== dataset =====
+dataset_root: ../fish_disease
+num_classes: 7
+label_map:
+  healthy: 0
+  aero: 1
+  fungal: 2
+  gill: 3
+  para: 4
+  red: 5
+  tail: 6
+
+# ===== 5-fold CV =====
+cv_seed: 42
+n_folds: 5
+
+# ===== model switches =====
+use_T: false
+use_R: false
+use_dirichlet: false
+use_T_eval: false
+use_R_eval: false
+backbone: vgg16
+
+# ===== training =====
+epochs: 50
+lr: 1e-6
+lambda_conf: 0.5
+lambda_risk: 0.5
+
+# ===== early stopping =====
+es_monitor: macro_f1
+es_mode: max
+es_patience: 3
+es_min_delta: 1e-3
+es_min_epoch: 10

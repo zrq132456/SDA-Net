@@ -28,11 +28,11 @@ The dataset used in the paper is **not included** in this repository.
 
 For researchers who wish to test the code, we recommend the following publicly available dataset:
 
-[ShrimpDiseaseImageBD](https://data.mendeley.com/datasets/jhrtdj9txm) contains annotated shrimp images and has been widely used for shrimp disease detection research.
+* [ShrimpDiseaseImageBD](https://data.mendeley.com/datasets/jhrtdj9txm) contains annotated shrimp images and has been widely used for shrimp disease detection research.
 
-[TigerShrimpBD](https://data.mendeley.com/datasets/9dj4sk5d55/1) is a 4-class shrimp disease dataset. The four categories contain 978 images of WSSV, 896 images of Yellow Head, 854 images of Black Gill, and 846 images of Healthy shrimp.
+* [TigerShrimpBD](https://data.mendeley.com/datasets/9dj4sk5d55/1) is a 4-class shrimp disease dataset. The four categories contain 978 images of WSSV, 896 images of Yellow Head, 854 images of Black Gill, and 846 images of Healthy shrimp.
 
-[Fish Disease Dataset](https://www.kaggle.com/datasets/subirbiswas19/freshwater-fish-disease-aquaculture-in-south-asia) is a 7-class fish disease dataset.
+* [Fish Disease Dataset](https://www.kaggle.com/datasets/subirbiswas19/freshwater-fish-disease-aquaculture-in-south-asia) is a 7-class dataset with 250 images per class, covering Healthy Fish, Bacterial Aeromoniasis, Bacterial Gill Disease, Bacterial Red Disease, Fungal Saprolegniasis, Parasitic Diseases, and Viral White Tail Disease.
 
 When preparing your own dataset, please follow the expected format defined in the `dataset/` module.
 
@@ -133,13 +133,15 @@ If you use the publicly available dataset, please cite:
 
 **Fish Disease Dataset**
 ```bibtex
-@misc{subir_biswas_2024,
-	title={Freshwater Fish Disease Aquaculture in south asia},
-  author={Subir Biswas},
+@article{biswas2024fishdisease,
+  title={Empirical Evaluation of Deep Learning Techniques for Fish Disease Detection in Aquaculture Systems: A Transfer Learning and Fusion-Based Approach},
+  author={Biswas, Subir and Muduli, Debendra and Islam, Md. Ariful and Kanade, Anuradha Shantanu and Zamani, Abu Taha and Kanade, Shantanu Pandurang and Parveen, Nikhat},
+  journal={IEEE Access},
+  volume={12},
+  pages={176136--176154},
   year={2024},
-  publisher={Kaggle},
-	doi={10.34740/KAGGLE/DSV/7944185},
-  url={https://www.kaggle.com/dsv/7944185},
+  doi={10.1109/ACCESS.2024.3504283},
+  url={https://doi.org/10.1109/ACCESS.2024.3504283}
 }
 ```
 

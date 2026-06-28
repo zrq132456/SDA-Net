@@ -28,21 +28,11 @@ The dataset used in the paper is **not included** in this repository.
 
 For researchers who wish to test the code, we recommend the following publicly available dataset:
 
-**ShrimpDiseaseImageBD Dataset**
-[https://data.mendeley.com/datasets/jhrtdj9txm](https://data.mendeley.com/datasets/jhrtdj9txm)
+[ShrimpDiseaseImageBD](https://data.mendeley.com/datasets/jhrtdj9txm) contains annotated shrimp images and has been widely used for shrimp disease detection research.
 
-This dataset contains annotated shrimp images and has been widely used for shrimp disease detection research.
+[TigerShrimpBD](https://data.mendeley.com/datasets/9dj4sk5d55/1) is a 4-class shrimp disease dataset. The four categories contain 978 images of WSSV, 896 images of Yellow Head, 854 images of Black Gill, and 846 images of Healthy shrimp.
 
-
-**TigerShrimpBD**
-[https://data.mendeley.com/datasets/9dj4sk5d55/1](https://data.mendeley.com/datasets/9dj4sk5d55/1)
-
-The four categories contain 978 images of WSSV, 896 images of Yellow Head, 854 images of Black Gill, and 846 images of Healthy shrimp.
-
-**Fish Disease Dataset**
-[https://www.kaggle.com/datasets/subirbiswas19/freshwater-fish-disease-aquaculture-in-south-asia](https://www.kaggle.com/datasets/subirbiswas19/freshwater-fish-disease-aquaculture-in-south-asia)
-
-This is a 7-class fish disease dataset.
+[Fish Disease Dataset](https://www.kaggle.com/datasets/subirbiswas19/freshwater-fish-disease-aquaculture-in-south-asia) is a 7-class fish disease dataset.
 
 When preparing your own dataset, please follow the expected format defined in the `dataset/` module.
 
@@ -115,6 +105,7 @@ If you find this repository useful in your research, please cite:
 If you use the publicly available dataset, please cite:
 
 **ShrimpDiseaseBD**
+```bibtex
 @article{islam2025shrimpdiseasebd,
   title={ShrimpDiseaseBD: An image dataset for detecting shrimp diseases in the aquaculture sector of Bangladesh},
   author={Islam, Md. M. and Sarker, A. and Choudhury, A. and Ahmed, N. and Shafi, A. A. and Niloy, N. T. and Hossain, M. S. and Ali, M. S. and Chowdhury, A. and Ferdaus, Md. H.},
@@ -125,8 +116,10 @@ If you use the publicly available dataset, please cite:
   doi={10.1016/j.dib.2025.111553},
   url={https://doi.org/10.1016/j.dib.2025.111553}
 }
+```
 
 **TigerShrimpBD**
+```bibtex
 @dataset{ahmed2025tigershrimpbd,
   title={TigerShrimpBD: A tiger shrimp image dataset},
   author={Ahmed, S. I. and Farid, D. M.},
@@ -136,8 +129,10 @@ If you use the publicly available dataset, please cite:
   doi={10.17632/9dj4sk5d55.1},
   url={https://doi.org/10.17632/9dj4sk5d55.1}
 }
+```
 
 **Fish Disease Dataset**
+```bibtex
 @misc{subir_biswas_2024,
 	title={Freshwater Fish Disease Aquaculture in south asia},
   author={Subir Biswas},
@@ -146,6 +141,7 @@ If you use the publicly available dataset, please cite:
 	doi={10.34740/KAGGLE/DSV/7944185},
   url={https://www.kaggle.com/dsv/7944185},
 }
+```
 
 ## License
 

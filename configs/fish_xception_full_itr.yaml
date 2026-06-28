@@ -1,0 +1,40 @@
+# ===== experiment info =====
+note: fish_xception_full_itr
+work_dir: work_dir
+
+# ===== dataset =====
+dataset_root: ../fish_disease
+num_classes: 7
+label_map:
+  healthy: 0
+  aero: 1
+  fungal: 2
+  gill: 3
+  para: 4
+  red: 5
+  tail: 6
+
+# ===== 5-fold CV =====
+cv_seed: 42
+n_folds: 5
+
+# ===== model switches =====
+use_T: true
+use_R: true
+use_dirichlet: true
+use_T_eval: true
+use_R_eval: true
+backbone: xception
+
+# ===== training =====
+epochs: 50
+lr: 1e-6
+lambda_conf: 0.5
+lambda_risk: 0.5
+
+# ===== early stopping =====
+es_monitor: macro_f1
+es_mode: max
+es_patience: 3
+es_min_delta: 1e-3
+es_min_epoch: 10

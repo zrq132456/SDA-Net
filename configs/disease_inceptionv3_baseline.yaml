@@ -14,7 +14,6 @@ label_map:
 #  yellowhead: 3
 
 # ===== 5-fold CV =====
-seed: 35
 cv_seed: 42
 n_folds: 5
 

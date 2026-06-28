@@ -10,6 +10,10 @@ label_map:
   stressed: 1
   diseased: 2
 
+# ===== 5-fold CV =====
+cv_seed: 48
+n_folds: 5
+
 # ===== model switches =====
 use_T: false
 use_R: true
@@ -23,11 +27,10 @@ epochs: 50
 lr: 1e-6
 lambda_conf: 0.5
 lambda_risk: 0.5
-print_every: 0.4
 
 # ===== early stopping =====
 es_monitor: macro_f1
 es_mode: max
-es_patience: 5
+es_patience: 3
 es_min_delta: 1e-3
-es_min_epoch: 15
+es_min_epoch: 10

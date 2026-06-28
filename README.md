@@ -28,7 +28,7 @@ The dataset used in the paper is **not included** in this repository.
 
 For researchers who wish to test the code, we recommend the following publicly available dataset:
 
-* [ShrimpDiseaseImageBD](https://data.mendeley.com/datasets/jhrtdj9txm) contains annotated shrimp images and has been widely used for shrimp disease detection research.
+* [ShrimpDiseaseImageBD](https://data.mendeley.com/datasets/jhrtdj9txm) is a 4-class black tiger shrimp disease dataset. The four categories contain 403 images of Healthy, 198 images of Black Gill, 328 images of White Spot Syndrome Virus, and 220 co-infection samples. This dataset has been widely used for shrimp disease detection research.
 
 * [TigerShrimpBD](https://data.mendeley.com/datasets/9dj4sk5d55/1) is a 4-class shrimp disease dataset. The four categories contain 978 images of WSSV, 896 images of Yellow Head, 854 images of Black Gill, and 846 images of Healthy shrimp.
 
